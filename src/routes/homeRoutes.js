@@ -11,7 +11,8 @@ const homeController = require('../controller/homeController');
 //     params: {id: zapatilla}
 // }
 
-router.get('/:id', homeController.renderHome)
+// router.get('/:id', homeController.renderHome)
+router.get('/', homeController.renderHome);
 
 
 module.exports = router;

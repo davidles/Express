@@ -7,6 +7,17 @@ const app = express();
 // Estatica la carpeta  publica
 app.use(express.static('public'));
 
+///////////////// EJS TEMPLATE /////////////////
+
+// Indicamos el motor de plantilla
+app.set('view engine',  'ejs');
+//Direccionamos a las vistas
+app.set('views', path.join(__dirname, '/views'));
+
+
+////////////////////////////////////////////////
+
+
 // Rutas
 const homeRoute = require('./routes/homeRoutes.js')
 
